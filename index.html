@@ -237,16 +237,49 @@
                         </table>
 
                         <!-- price section -->
-                        <div class="flex justify-between">
+                        <div class="flex justify-between mt-4">
                             <p class="font-medium">Total</p>
-                            <p class="font-medium mr-[59px]">BDT 000</p>
+                            <p class="font-medium mr-[59px]">BDT <span>0</span></p>
+                        </div>
+                        <!-- Coupon section -->
+                        <div class="bg-white flex  rounded-xl mr-[55px] mt-4">
+                            <input type="text" class=" px-5 w-[182px] focus:outline-none rounded-xl"
+                                placeholder="Have any copun">
+                            <button class="py-2 px-5 rounded-lg bg-[#1DD100] text-white my-2">Apply</button>
+                        </div>
+                        <!-- Grand total -->
+                        <div class="flex justify-between mt-4">
+                            <p class="font-medium">Grand Total</p>
+                            <p class="font-medium mr-[59px]">BDT <span>0</span></p>
                         </div>
 
+
                     </div>
+                    <form action="" class="space-y-4">
+                        <div class="space-y-2"><label for="passenger" class="font-semibold ">Passenger Name
+                                <sup>*</sup></label><br>
+                            <input type="text" placeholder="Enter your name" class="input  input-bordered w-full "
+                                required />
+                        </div>
+                        <div class="space-y-2"><label for="number" class="font-semibold ">Phone Number
+                                <sup>*</sup></label><br>
+                            <input type="number" placeholder="Enter your phone number"
+                                class="input  input-bordered w-full " required />
+                        </div>
+                        <div class="space-y-2"><label for="email" class="font-semibold ">Email ID
+                            </label><br>
+                            <input type="email" placeholder="Enter your email id"
+                                class="input  input-bordered w-full  " />
+                        </div>
+                        <button class="py-3 rounded-lg w-full bg-[#1DD100] text-white">Submit</button>
+                        <div class="flex my-6 justify-around text-secondary underline">
+                            <p>Terms and Conditions</p>
+                            <p>Cancellation Policy</p>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-
-
         </div>
 
         <!-- Footer -->
