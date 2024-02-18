@@ -182,7 +182,7 @@
                         </div>
                     </div>
                     <!-- seat stucture section -->
-                    <div class="grid grid-cols-7 gap-6">
+                    <div id="seat-parent" class="grid grid-cols-7 gap-6">
                         <!-- serial number and left seats -->
                         <!-- left side -->
                         <div class="col-span-4 space-y-4">
@@ -279,26 +279,46 @@
                         </div>
                         <!-- Right side -->
                         <div class="col-span-3  grid grid-cols-2 gap-4 my-1 w-full">
-                            <p id="A3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">A3</p>
-                            <p id="A4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">A4</p>
-                            <p id="B3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">B3</p>
-                            <p id="B4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">B4</p>
-                            <p id="C3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">C3</p>
-                            <p id="C4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">C4</p>
-                            <p id="D3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">D3</p>
-                            <p id="D4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">D4</p>
-                            <p id="E3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">E3</p>
-                            <p id="E4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">E4</p>
-                            <p id="F3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">F3</p>
-                            <p id="F4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">F4</p>
-                            <p id="G3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">G3</p>
-                            <p id="G4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">G4</p>
-                            <p id="H3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">H3</p>
-                            <p id="H4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">H4</p>
-                            <p id="I3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">I3</p>
-                            <p id="I4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">I4</p>
-                            <p id="J3" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">J3</p>
-                            <p id="J4" class="flex justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">J4</p>
+                            <p id="A3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                A3</p>
+                            <p id="A4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                A4</p>
+                            <p id="B3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                B3</p>
+                            <p id="B4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                B4</p>
+                            <p id="C3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                C3</p>
+                            <p id="C4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                C4</p>
+                            <p id="D3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                D3</p>
+                            <p id="D4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                D4</p>
+                            <p id="E3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                E3</p>
+                            <p id="E4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                E4</p>
+                            <p id="F3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                F3</p>
+                            <p id="F4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                F4</p>
+                            <p id="G3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                G3</p>
+                            <p id="G4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                G4</p>
+                            <p id="H3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                H3</p>
+                            <p id="H4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                H4</p>
+                            <p id="I3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                I3</p>
+                            <p id="I4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                I4</p>
+                            <p id="J3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                J3</p>
+                            <p id="J4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                J4</p>
                         </div>
 
 
@@ -312,7 +332,7 @@
                     </div>
                     <!-- Ticket calculation section -->
                     <div class="bg-[#F7F8F8] rounded-xl my-6 p-8">
-                        <table class="text-left w-full border-b border-[#03071233] ">
+                        <table id="ticketTable" class="text-left w-full border-b border-[#03071233] ">
                             <!-- head -->
                             <tr class="*:font-medium border-b border-[#03071233] border-dashed">
                                 <th>Seat</th>
@@ -343,21 +363,20 @@
                         <!-- price section -->
                         <div class="flex justify-between mt-4">
                             <p class="font-medium">Total</p>
-                            <p class="font-medium mr-[59px]">BDT <span>0</span></p>
+                            <p class="font-medium mr-[59px]">BDT <span id="totalPrice">0</span></p>
                         </div>
                         <!-- Coupon section -->
-                        <div class="bg-white flex  rounded-xl mr-[55px] mt-4">
-                            <input type="text" class=" px-5 w-[182px] focus:outline-none rounded-xl"
+                        <div id="copun-container" class="bg-white flex  rounded-xl mr-[55px] mt-4">
+                            <input id="copun" type="text" class=" px-5 w-[182px] focus:outline-none rounded-xl"
                                 placeholder="Have any copun">
-                            <button class="py-2 px-5 rounded-lg bg-[#1DD100] text-white my-2">Apply</button>
+                            <button id="copun-apply-btn"
+                                class="py-2 px-5 rounded-lg bg-[#1DD100] text-white my-2">Apply</button>
                         </div>
                         <!-- Grand total -->
                         <div class="flex justify-between mt-4">
                             <p class="font-medium">Grand Total</p>
-                            <p class="font-medium mr-[59px]">BDT <span>0</span></p>
+                            <p class="font-medium mr-[59px]">BDT <span id="grandTotal">0</span></p>
                         </div>
-
-
                     </div>
                     <!-- Ticket buying form -->
                     <form action="" class="space-y-4">
