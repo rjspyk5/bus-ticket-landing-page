@@ -105,7 +105,7 @@
         </div>
 
         <!-- Ticket and booking section -->
-        <div class="bg-[#F7F8F8] border-t border-[#1DD100] rounded-t-[88px] mt-28">
+        <div class="bg-[#F7F8F8] border-t border-[#1DD100] rounded-t-[88px] mt-28 pb-20 md:pb-28">
 
             <div id="whole-booking-section-container" class="">
                 <!-- Ticket section -->
@@ -119,26 +119,27 @@
                             app. The integrated testing features allow for a streamlined .</p>
                     </div>
                     <!-- Ticket card -->
-                    <div class="card  grid grid-cols-12 bg-base-100  mt-12">
+                    <div class="card  flex  md:grid md:grid-cols-12 bg-base-100  mt-12 ">
                         <!-- Bus name and seat details -->
-                        <div class="col-span-9 ">
-                            <div class="flex  p-8 justify-between flex-row items-center">
+                        <div class="col-span-9 order-2 md:order-1">
+                            <div class="flex px-3 md:p-8 justify-between flex-row items-center">
                                 <!-- logo and name -->
-                                <div class="flex items-center space-x-3">
+                                <div class="flex items-center space-x-1 md:space-x-3">
                                     <img class="w-16 h-12" src="images/bus-logo.png" alt="">
-                                    <div class="space-y-3">
-                                        <h6 class="text-3xl font-bold raleway">Greenline Paribahan</h6>
-                                        <p class="text-secondary">Coach-009-WEB ! AC_Business</p>
+                                    <div class="md:space-y-3 space-y-1">
+                                        <h6 class="md:text-3xl text-lg font-bold raleway">Greenline Paribahan</h6>
+                                        <p class="text-secondary text-sm">Coach-009-WEB ! AC_Business</p>
                                     </div>
                                 </div>
                                 <!-- dynamic seat section -->
-                                <div class="flex p-4 text-primary bg-[#1DD10026] rounded-xl items-center space-x-2">
+                                <div
+                                    class="flex p-1 md:p-4 text-primary bg-[#1DD10026] rounded-xl items-center space-x-1 md:space-x-2">
                                     <img src="images/seat-green.png" alt="">
                                     <p class="text-primary"><span id="available-seat">40</span>seats available</p>
                                 </div>
                             </div>
                             <!-- Bus route details section -->
-                            <div class="p-8 mx-8 mb-8 rounded-3xl bg-[#F7F8F8]">
+                            <div class="p-8 md:mx-8 mb-8 rounded-3xl bg-[#F7F8F8]">
                                 <div
                                     class="flex justify-between border-b border-[#03071233] border-dashed py-6 text-lg">
                                     <p class="text-secondary raleway">Route</p>
@@ -149,14 +150,14 @@
                                     <p class="text-secondary raleway">Departure Time</p>
                                     <p class="font-semibold  raleway">9:00 PM</p>
                                 </div>
-                                <div class="flex justify-between mt-6 space-x-6 text-center">
-                                    <div class="p-2 bg-[#0307120D] w-full font-medium rounded-xl">
+                                <div class="flex *:p-2  justify-between mt-6  space-x-1 md:space-x-6 text-center">
+                                    <div class=" bg-[#0307120D] w-full  font-medium rounded-xl ">
                                         Boarding Point - Laxmipur
                                     </div>
-                                    <div class="p-2 bg-[#0307120D] w-full  font-medium rounded-xl">
+                                    <div class=" bg-[#0307120D] w-full  font-medium rounded-xl">
                                         Dropping Point - Bogura
                                     </div>
-                                    <div class="p-2 bg-[#0307120D] w-full font-medium rounded-xl">
+                                    <div class=" bg-[#0307120D] w-full font-medium rounded-xl">
                                         Est. Time - 11 Hour
                                     </div>
                                 </div>
@@ -164,7 +165,7 @@
                         </div>
                         <!-- price side -->
                         <div
-                            class="col-span-3 flex flex-col space-y-4 justify-center items-center text-center p-8 bg-no-repeat bg-contain bg-[url('images/info-devider.png')]">
+                            class="col-span-3 order-1 md:order-2 flex flex-col space-y-4 justify-center items-center text-center p-8 bg-no-repeat bg-contain bg-[url('images/info-devider.png')]">
 
                             <img src="images/fare.png" alt="">
                             <div>
@@ -178,7 +179,7 @@
 
                 <div class="grid grid-cols-12 bg-white mt-6 mx-auto max-w-[1100px] rounded-3xl ">
                     <!-- booking section -->
-                    <div class="col-span-7 p-8 border-r border-[#03071233] border-dashed">
+                    <div class="md:col-span-7 col-span-12 p-8 border-r border-[#03071233] border-dashed">
                         <div class="border-b border-[#03071233] border-dashed pb-4 ">
                             <p class="font-semibold  raleway text-2xl">Select Your Seat</p>
                         </div>
@@ -382,7 +383,7 @@
                         </div>
 
                     </div>
-                    <div class="col-span-5 p-8">
+                    <div class="md:col-span-5 col-span-12  p-8">
                         <div class="border-b border-[#03071233] border-dashed pb-4 ">
                             <p class="font-semibold  raleway text-2xl">Select Your Seat</p>
                         </div>
@@ -468,33 +469,30 @@
 
         <!-- Footer -->
         <footer class="footer bg-black text-neutral-content">
-            <div class="max-w-[1100px] mx-auto ">
-
-                <div class="mt-14  flex md:flex-row flex-col gap-5 justify-between">
-                    <aside class="space-y-4">
-                        <p class="text-3xl">P-Ticket</p>
-                        <p class="text-[#FFFFFFCC] max-w-[372px]">P-Ticket is a digital platform to make your daily
-                            commuting
-                            better.
+            <div class="max-w-[1100px] w-full mx-auto pb-16 md:pb-28">
+                <div
+                    class="mt-14 w-full flex md:flex-row flex-col gap-5 justify-between border-b border-dashed border-[#FFFFFF4D] pb-10">
+                    <aside class="space-y-4 text-center md:text-left">
+                        <p class="text-3xl raleway font-extrabold">P-Ticket</p>
+                        <p class="text-[#FFFFFFCC] text-lg max-w-[372px] mx-auto md:mx-0">P-Ticket is a digital platform
+                            to your daily commuting better.
                         </p>
                     </aside>
-                    <aside class="space-y-4">
+                    <aside class="space-y-4 text-center md:text-left">
                         <p class="text-xl raleway font-semibold">Download our app</p>
                         <button> <a href=""><img src="images/ggolePlay.svg" alt=""></a></button>
                     </aside>
                 </div>
-                <div class="mt-8  flex md:flex-row flex-col gap-5 justify-between">
-                    <aside class="space-y-4 order-2 md:order-1">
+                <div class="mt-8 w-full flex md:flex-row flex-col gap-5 justify-between">
+                    <aside class="space-y-4 order-2 md:order-1 text-center">
                         <p class="text-[#FFFFFFB2]">@all rights reserved, P-Ticket services limited.2024</p>
                     </aside>
-                    <aside class="flex justify-between order-1 md:order-2">
-                        <a href="" class="underline-none font-medium">Terms & condition</a><a href=""
-                            class="underline-none font-medium">Return & refund policy</a><a href=""
+                    <aside class="flex space-x-8 order-1 md:order-2 justify-center ">
+                        <a href="#" class="underline-none font-medium">Terms & condition</a><a href="#"
+                            class="underline-none font-medium">Return & refund policy</a><a href="#"
                             class="underline-none font-medium">Privacy policy</a>
                     </aside>
                 </div>
-
-
             </div>
         </footer>
 
