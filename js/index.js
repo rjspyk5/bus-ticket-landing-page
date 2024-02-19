@@ -92,6 +92,12 @@ const bookSeat = (e) => {
     if (bookedSeat.length === 4) {
       copunApplyBtn.removeAttribute("disabled");
     }
+    if (bookedSeat.length > 0 && number.value.length > 0) {
+      nextBtn.removeAttribute("disabled");
+    }
+    if (bookedSeat.length < 0 || number.value.length === 0) {
+      nextBtn.setAttribute("disabled", true);
+    }
     grandTotalField.innerText = totalPrice();
   }
 };
