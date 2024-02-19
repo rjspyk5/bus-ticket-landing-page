@@ -9,7 +9,8 @@ const copunApplyBtn=document.getElementById("copun-apply-btn");
 const bookedSeatCount=document.getElementById("bookedSeatCount");
 const discountAmountField=document.getElementById("discountAmount")
 const grandTotalField=document.getElementById("grandTotal")
-
+const nextBtn=document.getElementById("nextBtn");
+const number=document.getElementById("number")
 
 // process to append tr and related functionality
 const appendSeat=(id)=>{ 
@@ -27,7 +28,6 @@ const appendSeat=(id)=>{
         ticketTable.appendChild(tr) 
     }
 }
-
 // setTotal price on totalPriceContainer
 const setTotalPrice=(price)=>{
     totalPriceContainer.innerText=price;
@@ -46,7 +46,17 @@ function UpdateAvailableSeat() {
 function updateBookedSeatCount() {
     bookedSeatCount.innerText=bookedSeat.length;
 }
-
+// What happen if click next button
+function handleNextBtn() {
+    
+}
+// What happend when mobile number section have some value
+function handleNumberType(e) {
+    if (bookedSeat.length>0 && e.target.value.length>0) {
+        nextBtn.removeAttribute('disabled');  
+    }
+    
+}
 // What happened when someone clicked on apply copun
 const handleCopunCode=()=>{
     if ((bookedSeat.length==4 && copunField.value==="NEW15") || (bookedSeat.length==4 && copunField.value==="Couple20")) {
@@ -74,6 +84,9 @@ const bookSeat=(e)=>{
         grandTotalField.innerText=totalPrice();
     }  
 }
-// Event listner for seat booking and copun apply
-copunApplyBtn.addEventListener("click",handleCopunCode)
-seatParent.addEventListener("click",bookSeat)
+
+//all Event listners
+copunApplyBtn.addEventListener("click",handleCopunCode);
+seatParent.addEventListener("click",bookSeat);
+nextBtn.addEventListener("click",handleNextBtn);
+number.addEventListener("keyup",handleNumberType);

@@ -367,12 +367,11 @@
                     <form action="" class="space-y-4">
                         <div class="space-y-2"><label for="passenger" class="font-semibold ">Passenger Name
                                 <sup>*</sup></label><br>
-                            <input type="text" placeholder="Enter your name" class="input  input-bordered w-full "
-                                required />
+                            <input type="text" placeholder="Enter your name" class="input  input-bordered w-full " />
                         </div>
                         <div class="space-y-2"><label for="number" class="font-semibold ">Phone Number
                                 <sup>*</sup></label><br>
-                            <input type="number" placeholder="Enter your phone number"
+                            <input id="number" type="number" placeholder="Enter your phone number"
                                 class="input  input-bordered w-full " required />
                         </div>
                         <div class="space-y-2"><label for="email" class="font-semibold ">Email ID
@@ -380,7 +379,8 @@
                             <input type="email" placeholder="Enter your email id"
                                 class="input  input-bordered w-full  " />
                         </div>
-                        <button class="py-3 rounded-lg w-full bg-[#1DD100] text-white">Submit</button>
+                        <button id="nextBtn" class="py-3 btn rounded-lg w-full bg-[#1DD100] text-white"
+                            disabled>Next</button>
 
                     </form>
                     <div class="flex my-6 justify-around text-secondary underline">
