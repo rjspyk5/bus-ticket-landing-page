@@ -7,10 +7,8 @@ const copunField=document.getElementById("copun");
 const copunContainer=document.getElementById("copun-container");
 const copunApplyBtn=document.getElementById("copun-apply-btn");
 const bookedSeatCount=document.getElementById("bookedSeatCount");
-
-
-
-
+const discountAmountField=document.getElementById("discountAmount")
+const grandTotalField=document.getElementById("grandTotal")
 
 
 // process to append tr and related functionality
@@ -18,6 +16,7 @@ const appendSeat=(id)=>{
     if ((!bookedSeat.includes(id)) && bookedSeat.length<4) {
         bookedSeat.push(id);
         document.getElementById(id).style.backgroundColor="#1DD100"
+        document.getElementById(id).style.color="white"
         const tr=document.createElement("tr");
         tr.classList.add("text-secondary");
         tr.innerHTML=`
@@ -48,23 +47,17 @@ function updateBookedSeatCount() {
     bookedSeatCount.innerText=bookedSeat.length;
 }
 
-// //grand total
-// const grandTotal=(copun15,copun20)=>{
-//     let total=totalPrice();
-//       if (copun15) {
-//        return total*(85/100);
-        
-//       }
-//       if (copun20) {
-//         return total*(85/100);
-//       }
-//  return total;
-// }
-
 // What happened when someone clicked on apply copun
 const handleCopunCode=()=>{
-    if (bookedSeat.length==4 && copunField.value==="NEW15") {
-        copunContainer.classList.add("hidden")
+    if ((bookedSeat.length==4 && copunField.value==="NEW15") || (bookedSeat.length==4 && copunField.value==="Couple20")) {
+        copunContainer.classList.add("hidden");
+        const percentage=parseInt(copunField.value.slice(-2))    
+        const discountAmount=totalPrice()*(percentage/100);
+        grandTotalField.innerText=totalPrice()-discountAmount;
+        discountAmountField.innerHTML=`Total discounted amount BDT : ${discountAmount} `
+    }
+    else{
+        alert("invalid copun code")
     }
 }
 // What happened when someone booked a seat
@@ -78,6 +71,7 @@ const bookSeat=(e)=>{
          if (bookedSeat.length===4) {
             copunApplyBtn.removeAttribute('disabled');  
         }
+        grandTotalField.innerText=totalPrice();
     }  
 }
 // Event listner for seat booking and copun apply
