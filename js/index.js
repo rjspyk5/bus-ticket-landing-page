@@ -20,6 +20,9 @@ const appendSeat = (id) => {
     document.getElementById(id).style.color = "white";
     const tr = document.createElement("tr");
     tr.classList.add("text-secondary");
+    tr.classList.add("flex");
+    tr.classList.add("justify-between");
+   
     tr.innerHTML = `
         <td>${id}</td>
         <td>Economy</td>
@@ -73,7 +76,7 @@ const handleCopunCode = () => {
     const percentage = parseInt(copunField.value.slice(-2));
     const discountAmount = totalPrice() * (percentage / 100);
     grandTotalField.innerText = totalPrice() - discountAmount;
-    discountAmountField.innerHTML = `Total discounted amount BDT : ${discountAmount} `;
+    discountAmountField.innerHTML = `<p>Discounted amount</p> <p>BDT ${discountAmount} </p>`;
   } else {
     alert("invalid copun code");
   }
