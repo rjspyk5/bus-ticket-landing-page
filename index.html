@@ -94,302 +94,366 @@
         </div>
         <!-- Ticket and booking section -->
         <div class="bg-[#F7F8F8] border-t border-[#1DD100] rounded-t-[88px] mt-28">
-            <!-- Ticket section -->
-            <div class="mx-auto max-w-[1100px] seat-booking-section-container ">
-                <!-- heading -->
-                <div class="nameSection space-y-6 text-center mt-28">
-                    <h1 class="text-4xl font-bold raleway">Rakibul Paribahan</h1>
-                    <p class="text-[#03071299] max-w-[736px] mx-auto">Yes, you can run unit tests and view the
-                        results directly
-                        within the
-                        app. The integrated testing features allow for a streamlined .</p>
-                </div>
-                <!-- Ticket card -->
-                <div class="card  grid grid-cols-12 bg-base-100  mt-12">
 
-                    <!-- Bus name and seat details -->
-                    <div class="col-span-9 ">
-                        <div class="flex  p-8 justify-between flex-row items-center">
-                            <!-- logo and name -->
-                            <div class="flex items-center space-x-3">
-                                <img class="w-16 h-12" src="images/bus-logo.png" alt="">
-                                <div class="space-y-3">
-                                    <h6 class="text-3xl font-bold raleway">Greenline Paribahan</h6>
-                                    <p class="text-secondary">Coach-009-WEB ! AC_Business</p>
+            <div id="whole-booking-section-container" class="">
+                <!-- Ticket section -->
+                <div class="mx-auto max-w-[1100px] seat-booking-section-container">
+                    <!-- heading -->
+                    <div class="nameSection space-y-6 text-center mt-28">
+                        <h1 class="text-4xl font-bold raleway">Rakibul Paribahan</h1>
+                        <p class="text-[#03071299] max-w-[736px] mx-auto">Yes, you can run unit tests and view the
+                            results directly
+                            within the
+                            app. The integrated testing features allow for a streamlined .</p>
+                    </div>
+                    <!-- Ticket card -->
+                    <div class="card  grid grid-cols-12 bg-base-100  mt-12">
+
+                        <!-- Bus name and seat details -->
+                        <div class="col-span-9 ">
+                            <div class="flex  p-8 justify-between flex-row items-center">
+                                <!-- logo and name -->
+                                <div class="flex items-center space-x-3">
+                                    <img class="w-16 h-12" src="images/bus-logo.png" alt="">
+                                    <div class="space-y-3">
+                                        <h6 class="text-3xl font-bold raleway">Greenline Paribahan</h6>
+                                        <p class="text-secondary">Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                                <!-- dynamic seat section -->
+                                <div class="flex p-4 text-primary bg-[#1DD10026] rounded-xl items-center space-x-2">
+                                    <img src="images/seat-green.png" alt="">
+                                    <p class="text-primary"><span id="available-seat">40</span>seats available</p>
                                 </div>
                             </div>
-                            <!-- dynamic seat section -->
-                            <div class="flex p-4 text-primary bg-[#1DD10026] rounded-xl items-center space-x-2">
-                                <img src="images/seat-green.png" alt="">
-                                <p class="text-primary"><span id="available-seat">40</span>seats available</p>
+                            <!-- Bus route details section -->
+                            <div class="p-8 mx-8 mb-8 rounded-3xl bg-[#F7F8F8]">
+                                <div
+                                    class="flex justify-between border-b border-[#03071233] border-dashed py-6 text-lg">
+                                    <p class="text-secondary raleway">Route</p>
+                                    <p class="font-semibold  raleway">Dhaka - Sylhet</p>
+                                </div>
+                                <div
+                                    class="flex justify-between border-b border-[#03071233] border-dashed py-6 text-lg">
+                                    <p class="text-secondary raleway">Departure Time</p>
+                                    <p class="font-semibold  raleway">9:00 PM</p>
+                                </div>
+                                <div class="flex justify-between mt-6 space-x-6 text-center">
+                                    <div class="p-2 bg-[#0307120D] w-full font-medium rounded-xl">
+                                        Boarding Point - Laxmipur
+                                    </div>
+                                    <div class="p-2 bg-[#0307120D] w-full  font-medium rounded-xl">
+                                        Dropping Point - Bogura
+                                    </div>
+                                    <div class="p-2 bg-[#0307120D] w-full font-medium rounded-xl">
+                                        Est. Time - 11 Hour
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Bus route details section -->
-                        <div class="p-8 mx-8 mb-8 rounded-3xl bg-[#F7F8F8]">
-                            <div class="flex justify-between border-b border-[#03071233] border-dashed py-6 text-lg">
-                                <p class="text-secondary raleway">Route</p>
-                                <p class="font-semibold  raleway">Dhaka - Sylhet</p>
-                            </div>
-                            <div class="flex justify-between border-b border-[#03071233] border-dashed py-6 text-lg">
-                                <p class="text-secondary raleway">Departure Time</p>
-                                <p class="font-semibold  raleway">9:00 PM</p>
-                            </div>
-                            <div class="flex justify-between mt-6 space-x-6 text-center">
-                                <div class="p-2 bg-[#0307120D] w-full font-medium rounded-xl">
-                                    Boarding Point - Laxmipur
-                                </div>
-                                <div class="p-2 bg-[#0307120D] w-full  font-medium rounded-xl">
-                                    Dropping Point - Bogura
-                                </div>
-                                <div class="p-2 bg-[#0307120D] w-full font-medium rounded-xl">
-                                    Est. Time - 11 Hour
-                                </div>
+                        <!-- price side -->
+                        <div
+                            class="col-span-3 flex flex-col space-y-4 justify-center items-center text-center p-8 bg-no-repeat bg-contain bg-[url('images/info-devider.png')]">
+
+                            <img src="images/fare.png" alt="">
+                            <div>
+                                <h1 class="raleway text-3xl font-bold">550 Taka </h1>
+                                <p class="text-secondary text-2xl font-semibold">Per seat</p>
                             </div>
                         </div>
                     </div>
-                    <!-- price side -->
-                    <div
-                        class="col-span-3 flex flex-col space-y-4 justify-center items-center text-center p-8 bg-no-repeat bg-contain bg-[url('images/info-devider.png')]">
+                </div>
+                <!-- Booking and Buying section -->
 
-                        <img src="images/fare.png" alt="">
-                        <div>
-                            <h1 class="raleway text-3xl font-bold">550 Taka </h1>
-                            <p class="text-secondary text-2xl font-semibold">Per seat</p>
+                <div class="grid grid-cols-12 bg-white mt-6 mx-auto max-w-[1100px] rounded-3xl ">
+                    <!-- booking section -->
+                    <div class="col-span-7 p-8 border-r border-[#03071233] border-dashed">
+                        <div class="border-b border-[#03071233] border-dashed pb-4 ">
+                            <p class="font-semibold  raleway text-2xl">Select Your Seat</p>
+                        </div>
+                        <div class="flex justify-between border-b border-[#03071233] border-dashed py-4 ">
+                            <div class="flex space-x-2 items-center">
+                                <img src="images/seat-gray.png" alt="">
+                                <p class="font-medium raleway text-secondary">Available</p>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <img src="images/seat-green-filled.png" alt="">
+                                <p class="font-medium raleway text-primary">Selected</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <div class="bg-[#0307121A] px-10 py-3 rounded-xl my-6">
+                                <img src="images/steering-icon.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- seat stucture section -->
+                        <div id="seat-parent" class="grid grid-cols-7 gap-6">
+                            <!-- serial number and left seats -->
+                            <!-- left side -->
+                            <div class="col-span-4 space-y-4">
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">A</p>
+                                    <p id="A1"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        A1
+                                    </p>
+                                    <p id="A2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        A2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">B</p>
+                                    <p id="B1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        B1
+                                    </p>
+                                    <p id="B2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        B2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">C</p>
+                                    <p id="C1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        C1
+                                    </p>
+                                    <p id="C2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        C2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">D</p>
+                                    <p id="D1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        D1
+                                    </p>
+                                    <p id="D2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        D2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">E</p>
+                                    <p id="E1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        E1
+                                    </p>
+                                    <p id="E2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        E2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">F</p>
+                                    <p id="F1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        F1
+                                    </p>
+                                    <p id="F2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        F2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">G</p>
+                                    <p id="G1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        G1
+                                    </p>
+                                    <p id="G2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        G2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">H</p>
+                                    <p id="H1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        H1
+                                    </p>
+                                    <p id="H2"
+                                        class="flex  seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        H2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">I</p>
+                                    <p id="I1"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        I1
+                                    </p>
+                                    <p id="I2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        I2
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4 items-center my-1 w-full">
+                                    <p class="">J</p>
+                                    <p id="J2"
+                                        class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        J1
+                                    </p>
+                                    <p id="J2"
+                                        class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                        J2
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Right side -->
+                            <div class="col-span-3  grid grid-cols-2 gap-4 my-1 w-full">
+                                <p id="A3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    A3</p>
+                                <p id="A4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    A4</p>
+                                <p id="B3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    B3</p>
+                                <p id="B4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    B4</p>
+                                <p id="C3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    C3</p>
+                                <p id="C4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    C4</p>
+                                <p id="D3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    D3</p>
+                                <p id="D4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    D4</p>
+                                <p id="E3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    E3</p>
+                                <p id="E4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    E4</p>
+                                <p id="F3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    F3</p>
+                                <p id="F4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    F4</p>
+                                <p id="G3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    G3</p>
+                                <p id="G4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    G4</p>
+                                <p id="H3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    H3</p>
+                                <p id="H4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    H4</p>
+                                <p id="I3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    I3</p>
+                                <p id="I4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    I4</p>
+                                <p id="J3"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    J3</p>
+                                <p id="J4"
+                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
+                                    J4</p>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-span-5 p-8">
+                        <div class="border-b border-[#03071233] border-dashed pb-4 ">
+                            <p class="font-semibold  raleway text-2xl">Select Your Seat</p>
+                        </div>
+                        <!-- Ticket calculation section -->
+                        <div class="bg-[#F7F8F8] rounded-xl my-6 p-8">
+                            <table id="ticketTable" class="text-left w-full border-b border-[#03071233] ">
+                                <!-- head -->
+                                <tr class="*:font-medium border-b border-[#03071233] border-dashed">
+                                    <th>Seat <span id="bookedSeatCount"
+                                            class="bg-[#1DD100] rounded-3xl text-white px-3">0</span></th>
+                                    <th>Class</th>
+                                    <th>Price</th>
+                                </tr>
+                            </table>
+
+                            <!-- price section -->
+                            <div class="flex justify-between mt-4">
+                                <p class="font-medium">Total</p>
+                                <p class="font-medium mr-[59px]">BDT <span id="totalPrice">0</span></p>
+                            </div>
+                            <!-- Coupon section -->
+
+                            <div id="copun-container" class="bg-white flex  rounded-xl mr-[55px] mt-4">
+                                <input id="copun" type="text" class=" px-5 w-[182px] focus:outline-none rounded-xl"
+                                    placeholder="Have any copun">
+                                <button id="copun-apply-btn"
+                                    class="py-2 btn px-5 rounded-lg bg-[#1DD100] text-white my-2"
+                                    disabled>Apply</button>
+                            </div>
+                            <!-- hidden discount amount container -->
+                            <p id="discountAmount" class="mt-3 text-gray-500 "></p>
+                            <!-- Grand total -->
+                            <div class="flex justify-between mt-4">
+                                <p class="font-medium">Grand Total</p>
+                                <p class="font-medium mr-[59px]">BDT <span id="grandTotal">0</span></p>
+                            </div>
+                        </div>
+                        <!-- Ticket buying form -->
+                        <form action="" class="space-y-4">
+                            <div class="space-y-2"><label for="passenger" class="font-semibold ">Passenger Name
+                                    <sup>*</sup></label><br>
+                                <input type="text" placeholder="Enter your name"
+                                    class="input  input-bordered w-full " />
+                            </div>
+                            <div class="space-y-2"><label for="number" class="font-semibold ">Phone Number
+                                    <sup>*</sup></label><br>
+                                <input id="number" type="number" placeholder="Enter your phone number"
+                                    class="input  input-bordered w-full " required />
+                            </div>
+                            <div class="space-y-2"><label for="email" class="font-semibold ">Email ID
+                                </label><br>
+                                <input type="email" placeholder="Enter your email id"
+                                    class="input  input-bordered w-full  " />
+                            </div>
+                            <button id="nextBtn" class="py-3 btn rounded-lg w-full bg-[#1DD100] text-white"
+                                disabled>Next</button>
+
+                        </form>
+                        <div class="flex my-6 justify-around text-secondary underline">
+                            <p>Terms and Conditions</p>
+                            <p>Cancellation Policy</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Booking and Buying section -->
-            <div class="grid  grid-cols-12 bg-white mt-6 mx-auto max-w-[1100px] rounded-3xl">
-                <!-- booking section -->
-                <div class="col-span-7 p-8 border-r border-[#03071233] border-dashed">
-                    <div class="border-b border-[#03071233] border-dashed pb-4 ">
-                        <p class="font-semibold  raleway text-2xl">Select Your Seat</p>
-                    </div>
-                    <div class="flex justify-between border-b border-[#03071233] border-dashed py-4 ">
-                        <div class="flex space-x-2 items-center">
-                            <img src="images/seat-gray.png" alt="">
-                            <p class="font-medium raleway text-secondary">Available</p>
-                        </div>
-                        <div class="flex space-x-2 items-center">
-                            <img src="images/seat-green-filled.png" alt="">
-                            <p class="font-medium raleway text-primary">Selected</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-end">
-                        <div class="bg-[#0307121A] px-10 py-3 rounded-xl my-6">
-                            <img src="images/steering-icon.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- seat stucture section -->
-                    <div id="seat-parent" class="grid grid-cols-7 gap-6">
-                        <!-- serial number and left seats -->
-                        <!-- left side -->
-                        <div class="col-span-4 space-y-4">
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">A</p>
-                                <p id="A1"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">A1
-                                </p>
-                                <p id="A2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">A2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">B</p>
-                                <p id="B1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">B1
-                                </p>
-                                <p id="B2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">B2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">C</p>
-                                <p id="C1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">C1
-                                </p>
-                                <p id="C2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">C2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">D</p>
-                                <p id="D1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">D1
-                                </p>
-                                <p id="D2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">D2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">E</p>
-                                <p id="E1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">E1
-                                </p>
-                                <p id="E2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">E2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">F</p>
-                                <p id="F1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">F1
-                                </p>
-                                <p id="F2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">F2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">G</p>
-                                <p id="G1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">G1
-                                </p>
-                                <p id="G2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">G2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">H</p>
-                                <p id="H1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">H1
-                                </p>
-                                <p id="H2"
-                                    class="flex  seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">H2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">I</p>
-                                <p id="I1"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">I1
-                                </p>
-                                <p id="I2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">I2
-                                </p>
-                            </div>
-                            <div class="flex space-x-4 items-center my-1 w-full">
-                                <p class="">J</p>
-                                <p id="J2"
-                                    class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">J1
-                                </p>
-                                <p id="J2"
-                                    class="flex seat  justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">J2
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Right side -->
-                        <div class="col-span-3  grid grid-cols-2 gap-4 my-1 w-full">
-                            <p id="A3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                A3</p>
-                            <p id="A4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                A4</p>
-                            <p id="B3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                B3</p>
-                            <p id="B4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                B4</p>
-                            <p id="C3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                C3</p>
-                            <p id="C4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                C4</p>
-                            <p id="D3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                D3</p>
-                            <p id="D4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                D4</p>
-                            <p id="E3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                E3</p>
-                            <p id="E4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                E4</p>
-                            <p id="F3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                F3</p>
-                            <p id="F4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                F4</p>
-                            <p id="G3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                G3</p>
-                            <p id="G4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                G4</p>
-                            <p id="H3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                H3</p>
-                            <p id="H4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                H4</p>
-                            <p id="I3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                I3</p>
-                            <p id="I4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                I4</p>
-                            <p id="J3" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                J3</p>
-                            <p id="J4" class="flex seat justify-center items-center w-28 h-14 bg-[#F7F8F8] rounded-xl">
-                                J4</p>
-                        </div>
+            <!-- Hidden Modal -->
+            <div id="modal"
+                class="max-w-[768px] mx-auto bg-white flex hidden flex-col justify-center items-center space-y-7 rounded-2xl py-16">
+                <img src="images/success.png" alt="">
+                <p class="text-primary">Success</p>
+                <div>
+                    <p class="text-center">
+                        Thank you for Booking Our Bus Seats.
+                        We are working hard to find the best service and deals for you.
+                        Shortly you will find a confirmation in your email.
+                    </p>
 
-
-
-                    </div>
-
-                </div>
-                <div class="col-span-5 p-8">
-                    <div class="border-b border-[#03071233] border-dashed pb-4 ">
-                        <p class="font-semibold  raleway text-2xl">Select Your Seat</p>
-                    </div>
-                    <!-- Ticket calculation section -->
-                    <div class="bg-[#F7F8F8] rounded-xl my-6 p-8">
-                        <table id="ticketTable" class="text-left w-full border-b border-[#03071233] ">
-                            <!-- head -->
-                            <tr class="*:font-medium border-b border-[#03071233] border-dashed">
-                                <th>Seat <span id="bookedSeatCount"
-                                        class="bg-[#1DD100] rounded-3xl text-white px-3">0</span></th>
-                                <th>Class</th>
-                                <th>Price</th>
-                            </tr>
-                        </table>
-
-                        <!-- price section -->
-                        <div class="flex justify-between mt-4">
-                            <p class="font-medium">Total</p>
-                            <p class="font-medium mr-[59px]">BDT <span id="totalPrice">0</span></p>
-                        </div>
-                        <!-- Coupon section -->
-
-                        <div id="copun-container" class="bg-white flex  rounded-xl mr-[55px] mt-4">
-                            <input id="copun" type="text" class=" px-5 w-[182px] focus:outline-none rounded-xl"
-                                placeholder="Have any copun">
-                            <button id="copun-apply-btn" class="py-2 btn px-5 rounded-lg bg-[#1DD100] text-white my-2"
-                                disabled>Apply</button>
-                        </div>
-                        <!-- hidden discount amount container -->
-                        <p id="discountAmount" class="mt-3 text-gray-500 "></p>
-                        <!-- Grand total -->
-                        <div class="flex justify-between mt-4">
-                            <p class="font-medium">Grand Total</p>
-                            <p class="font-medium mr-[59px]">BDT <span id="grandTotal">0</span></p>
-                        </div>
-                    </div>
-                    <!-- Ticket buying form -->
-                    <form action="" class="space-y-4">
-                        <div class="space-y-2"><label for="passenger" class="font-semibold ">Passenger Name
-                                <sup>*</sup></label><br>
-                            <input type="text" placeholder="Enter your name" class="input  input-bordered w-full " />
-                        </div>
-                        <div class="space-y-2"><label for="number" class="font-semibold ">Phone Number
-                                <sup>*</sup></label><br>
-                            <input id="number" type="number" placeholder="Enter your phone number"
-                                class="input  input-bordered w-full " required />
-                        </div>
-                        <div class="space-y-2"><label for="email" class="font-semibold ">Email ID
-                            </label><br>
-                            <input type="email" placeholder="Enter your email id"
-                                class="input  input-bordered w-full  " />
-                        </div>
-                        <button id="nextBtn" class="py-3 btn rounded-lg w-full bg-[#1DD100] text-white"
-                            disabled>Next</button>
-
-                    </form>
-                    <div class="flex my-6 justify-around text-secondary underline">
-                        <p>Terms and Conditions</p>
-                        <p>Cancellation Policy</p>
-                    </div>
                 </div>
             </div>
+
         </div>
+
 
         <!-- Footer -->
         <footer class="footer p-10 bg-neutral text-neutral-content">

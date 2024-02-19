@@ -12,6 +12,7 @@ const grandTotalField=document.getElementById("grandTotal")
 const nextBtn=document.getElementById("nextBtn");
 const number=document.getElementById("number")
 
+
 // process to append tr and related functionality
 const appendSeat=(id)=>{ 
     if ((!bookedSeat.includes(id)) && bookedSeat.length<4) {
@@ -47,13 +48,18 @@ function updateBookedSeatCount() {
     bookedSeatCount.innerText=bookedSeat.length;
 }
 // What happen if click next button
-function handleNextBtn() {
-    
+function handleNextBtn(e) {
+e.preventDefault()
+document.getElementById("whole-booking-section-container").classList.add("hidden");
+document.getElementById("modal").classList.remove("hidden");
 }
 // What happend when mobile number section have some value
 function handleNumberType(e) {
     if (bookedSeat.length>0 && e.target.value.length>0) {
         nextBtn.removeAttribute('disabled');  
+    }
+    if (bookedSeat.length<0 || e.target.value.length===0) {
+        nextBtn.setAttribute('disabled',true);  
     }
     
 }
