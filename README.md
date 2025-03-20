@@ -1,1 +1,1 @@
-This is simple landing page
+Bus ticket home page like greenline
